@@ -3,8 +3,8 @@ const router = express.Router();
 
 const { create, get, destroy } = require("./handler/cloudinary");
 
-router.post("/cloudinary", create);
-router.get("/cloudinary", get);
-router.delete("/cloudinary/:id", destroy);
+router.post("/", create);
+router.get("/", get);
+router.delete("/:id", destroy);
 
 module.exports = router;
